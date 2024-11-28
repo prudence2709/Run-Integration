@@ -1,0 +1,174 @@
+:root{
+    --color1: rgb(124, 118, 118);
+    --color2: rgb(26, 24, 24);
+    --color3: rgba(173, 172, 172,0.3);
+    --color4: rgb(79, 79, 199);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+}
+button{
+    border: 1px solid var(--color1);
+    border-radius: 15px;
+    padding: 10px;
+    width: 130px;
+    background: transparent;
+    text-transform: uppercase;
+    color: var(--color1);
+    font-size: 0.7rem;
+}
+h2{
+    text-transform: capitalize;
+    font-weight: 200;
+    font-size: 1.3rem;
+    padding: 10px;
+}
+
+/* ************************* HEADER ********************************* */
+header{
+    height: 60vh;
+}
+.landind-page{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100%;
+    border-bottom: 1px solid var(--color3);
+}
+.header-left{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+   
+}
+.container h1{
+    font-weight: 100;
+    font-size: 3.1rem;
+}
+.container p{
+    font-weight: 100;
+    color: var(--color2);
+    padding: 15px 0;
+    line-height: 25px;
+}
+.header-rigth{
+   background: url(./img/banner.jpg) right/cover;
+}
+/* ***************** MAIN ***************** */
+.learn1{
+    height: 40vh;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    border-bottom: 1px solid var(--color3);
+}
+.learn-left1{
+width: 100%;
+height: 100%;
+object-fit: cover;
+background: url(./img/img-left.jpg) center/cover;
+}
+
+.learn-right1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 40px;
+}
+.learn2{
+
+    height: 40vh;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    border-bottom: 1px solid var(--color3);
+}
+.learn-rigth2{
+    width: 100%;
+height: 100%;
+object-fit: cover;
+background: url(./img/img-right.jpg) center/cover;
+
+}
+.learn-left2{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.message{
+    min-height: 50vh;
+    border-bottom: 1px solid var(--color3);
+    text-align: center;
+}
+.message h2{
+    font-size: 2.1rem;
+    font-weight: 100;
+    margin-top: 60px;
+}
+/* FORMULAIRE GRID */
+
+form{
+    width: 50%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20px 30px 20px 160px;
+    grid-template-areas: 
+    "l1 l2"
+    "i1 i2"
+    "m1 m1"
+    "ta ta";
+}
+.label1{
+    grid-area: l1;
+}
+.label2{
+    grid-area: l2;
+}
+.message1{
+    grid-area: m1;
+    padding: 10px 0;
+   
+}
+
+input{
+    
+    border: 1px solid var(--color3);
+    margin-right: 10px;
+   
+}
+textarea{
+    grid-area: ta;
+  
+    resize: none;
+    border: 1px solid var(--color3);
+    margin: 20px 0;
+}
+footer{
+    margin-bottom: 30px;
+
+}
+.icones{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icones span{
+    border: 1px solid var(--color3);
+    border-radius: 250px;
+    padding: 15px;
+    margin: 30px 10px;
+}
+/* *********** Effets ************* */
+button:hover, .icones span:hover{
+    color: var(--color4);
+    border: 1px solid var(--color4);
+}
